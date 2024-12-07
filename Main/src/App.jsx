@@ -1,16 +1,20 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Navigation.jsx';
+import Nav from './components/Navigation';
+import Footer from './components/Footer';
 
-import './App.css';
 
 function App() {
+  const style = {
+    background: '#004346'
+  }
   return (
-    <>
+    <div style={style}>
       <Nav />
       <main>
         <Outlet />
       </main>
-    </>
+      <Footer />
+    </div>
   );
 }
 
