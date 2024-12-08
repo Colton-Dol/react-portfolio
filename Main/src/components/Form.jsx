@@ -6,14 +6,35 @@ function Form() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        if (name === 'name') {
+            setName(value);
+        } else if (name === 'email') {
+            setEmail(value);
+        } else {
+            setMessage(value);
+        }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
+
     return (
         <div>
-            <form className="ms-5">
+            <form className="ms-5" onSubmit={handleSubmit}>
                 <div className="mb-3 w-50">
                     <label for="name" className="form-label text-light">Name:</label>
                     <input 
                         value={name}
                         name="name"
+                        onChange={handleChange}
                         type="text"
                         className="form-control"
                     />
@@ -23,6 +44,7 @@ function Form() {
                     <input 
                         value={email}
                         name="email"
+                        onChange={handleChange}
                         type="email"
                         className="form-control"
                     />
@@ -32,6 +54,7 @@ function Form() {
                     <textarea 
                         value={message}
                         name="message"
+                        onChange={handleChange}
                         className="form-control"
                         rows={10}
                     />
