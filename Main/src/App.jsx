@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './components/Navigation';
+import Header from './components/Header';
 import Footer from './components/Footer';
-
 
 function App() {
   const style = {
@@ -9,7 +8,7 @@ function App() {
   }
   return (
     <div style={style}>
-      <Nav />
+      <Header />
       <main>
         <Outlet />
       </main>
