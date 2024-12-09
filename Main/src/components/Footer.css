@@ -1,0 +1,12 @@
+.github {
+    width: 175px;
+}
+
+.Icon {
+    opacity: 0.5;
+}
+
+.Icon:hover {
+    transition: .5s ease;
+    opacity: 1
+}
