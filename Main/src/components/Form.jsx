@@ -86,7 +86,7 @@ function Form() {
                     />
                 </div>
                 <p className="mb-3 text-light">{error}</p>
-                <button type="submit" className="mb-5">
+                <button type="submit" className="mb-5 mt-2 btn btn-light">
                     Submit
                 </button>
             </form>
