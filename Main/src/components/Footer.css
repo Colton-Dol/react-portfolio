@@ -1,12 +1,13 @@
-.github {
-    width: 175px;
+:root {
+    background-color: #004346;
 }
 
-.Icon {
+.icon {
     opacity: 0.5;
+    width: 150px;
 }
 
-.Icon:hover {
+.icon:hover {
     transition: .5s ease;
     opacity: 1
 }
