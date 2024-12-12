@@ -3,18 +3,38 @@ import Project from '../components/Project';
 
 function Portfolio() {
     const title = 'Pizza Pizza';
-    const image = './src/assets/images/blue-background.jpg';
+    const image = 'blue-background.jpg';
     const app = 'https://littlecaesers.com';
     const repo = 'https://github.com/Colton-Dol/employee-tracker';
+    const title2 = '';
+    const image2 = 'Square-Profile-Picture-2.jpg'
 
     return (
-        <div className='row ms-5 mt-5'>
-         <Project title={title} image={image} app={app} repo={repo} />
-         <Project />
-         <Project />
-         <Project />
-         <Project />
-         <Project />
+        <div className='container align-items-center text-center mt-5'>
+            <div className='row justify-content-center pb-5'>
+                <div className='col-5 me-5' id='1'>
+                    <Project title={title} image={image} app={app} repo={repo} />
+                </div>
+                <div className='col-5 ms-5' id='2'>
+                    <Project title={title} image={image2} app={app} repo={repo} />
+                </div>
+            </div>
+            <div className='row justify-content-center pb-5'>
+                <div className='col-5 me-5' id='3'>
+                    <Project title={title} image={image} app={app} repo={repo} />
+                </div>
+                <div className='col-5 ms-5' id='4'>
+                    <Project title={title} image={image} app={app} repo={repo} />
+                </div>
+            </div>
+            <div className='row justify-content-center pb-5'>
+                <div className='col-5 me-5' id='5'>
+                    <Project title={title} image={image} app={app} repo={repo} />
+                </div>
+                <div className='col-5 ms-5' id='6'>
+                    <Project title={title} image={image} app={app} repo={repo} />
+                </div>
+            </div>
         </div>
     )
 }       
