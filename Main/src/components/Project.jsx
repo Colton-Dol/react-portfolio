@@ -4,10 +4,9 @@ import GitHub from './GitHub';
 
 function Project(props) {
     return (
-        <div className="container pb-4">
-            <img src={props.image} className="image"/>
-            <div className="middle">
-                <a href={props.app} target='_blank' className="text">{props.title}</a>
+        <div className='image' style={{backgroundImage: `url(./src/assets/images/${props.image})`}}>
+            <div className='container'>
+                <a href={props.app} target='_blank' className='text text-decoration-none'>{props.title}</a>
                 <GitHub link={props.repo} />
             </div>
         </div>
