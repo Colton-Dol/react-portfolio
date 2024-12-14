@@ -2,12 +2,12 @@
 import './Project.css';
 import GitHub from './GitHub';
 
-function Project(props) {
+function Project({ title, image, app, repo }) {
     return (
-        <div className='image' style={{backgroundImage: `url(./src/assets/images/${props.image})`}}>
+        <div className='image' style={{backgroundImage: `url(./src/assets/images/${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className='container'>
-                <a href={props.app} target='_blank' className='text text-decoration-none'>{props.title}</a>
-                <GitHub link={props.repo} />
+                <a href={app} target='_blank' className='text text-decoration-none'>{title}</a>
+                <GitHub link={repo} />
             </div>
         </div>
     )
