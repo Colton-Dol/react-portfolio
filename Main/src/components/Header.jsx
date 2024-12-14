@@ -3,15 +3,15 @@ import Nav from './Navigation.jsx';
 
 function Header() {
     const style ={
-        backgroundImage: `url("./src/assets/images/background.jpg")`
+        backgroundImage: `url("./src/assets/images/headerBackground.png")`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
     }
 
     return (
-        <div className='container-fluid p-5' style={style}>
-            <div className='row align-items-center'>
-                <h1 className='text-light'>Colton Doling</h1>
-                <Nav />
-            </div>
+        <div className='container-fluid p-3' style={style}>
+            <h1 className='text-light pt-3'>Colton Doling</h1>
+            <Nav />
         </div>
     );
 }
