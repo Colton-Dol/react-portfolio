@@ -5,7 +5,7 @@ function Nav() {
     const currentPage = useLocation().pathname;
 
     return (
-        <ul className='nav justify-content-end'>
+        <ul className='nav justify-content-end mb-2'>
             <li className='nav-item'>
                 <Link
                     to='/'
