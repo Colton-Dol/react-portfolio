@@ -9,7 +9,7 @@ const link = 'https://github.com/Colton-Dol';
         <div>
             <div className="container text-center">
                 <GitHub link={link} />
-                <a href='https://linkedin.com' target='_blank'><img src='./src/assets/images/In-White-72.png' className='icon p-5'/></a>
+                <a href='https://www.linkedin.com/in/colton-doling-893bb0341/' target='_blank'><img src='./src/assets/images/In-White-72.png' className='icon p-5'/></a>
                 <a href='https://x.com/colton_doling' target='_blank'><img src='./src/assets/images/x-logo-black.png' className='icon rounded ms-5 p-2' style={{backgroundColor: '#ffffff', width: 50}}/></a>
             </div>
             <div className='text-center ms-3'>
