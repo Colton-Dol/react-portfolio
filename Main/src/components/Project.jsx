@@ -4,7 +4,7 @@ import GitHub from './GitHub';
 
 function Project({ title, image, app, repo }) {
     return (
-        <div className='image' style={{backgroundImage: `url(./src/assets/images/${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+        <div className='image' style={{backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
             <div className='container'>
                 <a href={app} target='_blank' className='text text-decoration-none'>{title}</a>
                 <GitHub link={repo} />

@@ -1,45 +1,51 @@
 // TODO: Implement the Project components in two columns side-by-side. Use props to make each Project different.
 import Project from '../components/Project';
+import prework from '/src/assets/images/prework.jpg';
+import horiseon from '/src/assets/images/horiseon-background.jpg';
+import payrole from '/src/assets/images/payrole-background.jpg';
+import oldPortfolio from '/src/assets/images/portfolio-background.jpg';
+import sunset from '/src/assets/images/sunset-cloud.jpg';
+import storm from '/src/assets/images/dark-weather.jpg';
 
 function Portfolio() {
     const project1 = {
         title: 'Prework Study Guide',
-        image: 'prework.jpg',
+        image: prework,
         app: 'https://colton-dol.github.io/prework-study-guide/',
         repo: 'https://github.com/Colton-Dol/prework-study-guide'
     }
 
     const project2 = {
         title: 'Horiseon',
-        image: 'horiseon-background.jpg',
+        image: horiseon,
         app: 'https://colton-dol.github.io/horiseon-accessibility-improvement/',
         repo: 'https://github.com/Colton-Dol/horiseon-accessibility-improvement/'
     }
 
     const project3 = {
         title: 'Payrole Tracker',
-        image: 'payrole-background.jpg',
+        image: payrole,
         app: 'https://colton-dol.github.io/payrole-tracker/',
         repo: 'https://github.com/Colton-Dol/payrole-tracker'
     }
 
     const project4 = {
         title: 'Old Portfolio',
-        image: 'portfolio-background.jpg',
+        image: oldPortfolio,
         app: 'https://colton-dol.github.io/portfolio/',
         repo: 'https://github.com/Colton-Dol/portfolio'
     }
 
     const project5 = {
         title: `What's the Weather?`,
-        image: 'sunset-cloud.jpg',
+        image: sunset,
         app: 'https://hieu12-12.github.io/Project-1/',
         repo: 'https://github.com/hieu12-12/Project-1'
     }
 
     const project6 = {
         title: 'Weather Dashboard',
-        image: 'dark-weather.jpg',
+        image: storm,
         app: 'https://weather-dashboard-7nxn.onrender.com/',
         repo: 'https://github.com/Colton-Dol/weather-dashboard'
     }
