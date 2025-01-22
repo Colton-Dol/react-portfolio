@@ -1,5 +1,5 @@
 // TODO: Display a picture of myself and a short bio.
-import Profile from '/src/assets/images/profile-picture.jpg';
+import Profile from 'src/assets/images/profile-picture.jpg';
 
 function AboutMe() {
     return ( 
