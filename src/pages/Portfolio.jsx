@@ -1,11 +1,11 @@
 // TODO: Implement the Project components in two columns side-by-side. Use props to make each Project different.
 import Project from '../components/Project';
-import prework from '/src/assets/images/prework.jpg';
-import horiseon from '/src/assets/images/horiseon-background.jpg';
-import payrole from '/src/assets/images/payrole-background.jpg';
-import oldPortfolio from '/src/assets/images/portfolio-background.jpg';
-import sunset from '/src/assets/images/sunset-cloud.jpg';
-import storm from '/src/assets/images/dark-weather.jpg';
+import prework from '../images/prework.jpg';
+import horiseon from '../images/horiseon-background.jpg';
+import payrole from '../images/payrole-background.jpg';
+import oldPortfolio from '../images/portfolio-background.jpg';
+import sunset from '../images/sunset-cloud.jpg';
+import storm from '../images/dark-weather.jpg';
 
 function Portfolio() {
     const project1 = {
