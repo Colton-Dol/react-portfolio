@@ -1,8 +1,8 @@
 // TODO: Display text or icon links to my GitHub, LinkedIn, and a third platform.
 import './Footer.css';
 import GitHub from './GitHub.jsx';
-import LinkedIn from '/src/assets/images/In-White-72.png';
-import X from '/src/assets/images/x-logo-black.png';
+import LinkedIn from '../images/In-White-72.png';
+import X from '../images/x-logo-black.png';
 
 function Footer() {
 const link = 'https://github.com/Colton-Dol';

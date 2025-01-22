@@ -1,6 +1,6 @@
 // TODO: Have a background image with my name and implement the Navigation component.
 import Nav from './Navigation.jsx';
-import HeaderBG from '/src/assets/images/headerBackground.png';
+import HeaderBG from '../images/headerBackground.png';
 
 function Header() {
     const style ={
