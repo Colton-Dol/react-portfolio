@@ -1,11 +1,14 @@
 // TODO: Add a form with fields for name, email address, and a message. Load an alert below message if the email is invalid or the message field is empty.
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 function Form() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
+    const form = useRef();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -21,6 +24,24 @@ function Form() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const service = import.meta.env.VITE_SERVICE_ID;
+        const template = import.meta.env.VITE_TEMPLATE_ID;
+        const APIKey = import.meta.env.VITE_EMAILJS_KEY;
+
+        emailjs
+        .sendForm(service, template, form.current, {
+            publicKey: APIKey,
+        })
+        .then(
+            () => {
+                console.log('SUCCESS!');
+                setSuccess('Your email has been sent!');
+            },
+            (error) => {
+                console.log('FAILED...', error.text);
+                setError(error.text);
+            },
+        );
 
         setName('');
         setEmail('');
@@ -51,7 +72,7 @@ function Form() {
 
     return (
         <div>
-            <form className="ms-5" onSubmit={handleSubmit}>
+            <form className="ms-5" ref={form} onSubmit={handleSubmit}>
                 <div className="mb-3 w-50">
                     <label htmlFor="name" className="form-label text-light">Name:</label>
                     <input 
@@ -86,7 +107,8 @@ function Form() {
                     />
                 </div>
                 <p className="mb-3 text-light">{error}</p>
-                <button type="submit" className="mb-5 mt-2 btn btn-light">
+                <p className="mb-3 text-light">{success}</p>
+                <button type="submit" value='Send' className="mb-5 mt-2 btn btn-light">
                     Submit
                 </button>
             </form>
