@@ -14,12 +14,15 @@ function Resume() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Bootstrap</li>
+                <li>React</li>
             </ul>
             <h3 className="ms-5">Back-end Proficiencies</h3>
             <ul className="p-4 ms-5">
                 <li>APIs</li>
                 <li>Node</li>
                 <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
             </ul>
         </div>
     )
