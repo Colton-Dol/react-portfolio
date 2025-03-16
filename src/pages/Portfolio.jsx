@@ -1,13 +1,13 @@
 // TODO: Implement the Project components in two columns side-by-side. Use props to make each Project different.
 import Project from '../components/Project';
-import candidates from '../images/candidate.png';
+import candidates from '../images/candidates.png';
 import sunset from '../images/sunset-cloud.jpg';
 import adventurersBoard from '../images/empty-guild-board.jpg';
 import treasureBar from '../images/titleScreen.png';
 
 function Portfolio() {
     const project1 = {
-        title: 'GitHub Candidate Search',
+        title: 'Candidate Search',
         image: candidates,
         app: 'https://github-candidate-search-1.onrender.com/',
         repo: 'https://github.com/Colton-Dol/github-candidate-search'
